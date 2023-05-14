@@ -26,15 +26,22 @@ h3 {
   font-size: 15px;
 }
 
+.expense-item__description p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .expense-item__description {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
+  max-width: 12rem;
 }
 
 .expense-item__price {
-  text-align: center;
-  width: 20vh;
+  width: 10rem;
   font-size: 15px;
   font-weight: bold;
   background-color: black;
@@ -44,6 +51,7 @@ h3 {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  margin-left: 10px;
 }
 
 @media (min-width: 400px) {
@@ -56,13 +64,6 @@ h3 {
   .expense-item {
     width: 24rem;
   }
-}
-
-@media (min-width: 600px) {
-  .expense-item {
-    width: 30rem;
-    justify-content: flex-start;
-  }
 
   .expense-item h2,
   p,
@@ -71,9 +72,22 @@ h3 {
   }
 }
 
+@media (min-width: 600px) {
+  .expense-item {
+    width: 30rem;
+    justify-content: flex-start;
+  }
+}
+
 @media (min-width: 700px) {
   .expense-item {
     width: 36rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .expense-item {
+    width: 43rem;
   }
 }
 
