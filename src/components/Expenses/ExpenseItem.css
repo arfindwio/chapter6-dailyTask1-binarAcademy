@@ -1,0 +1,84 @@
+.expense-item {
+  width: 10rem;
+  padding: 10px;
+  margin: 10px;
+  background-color: #dee2e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 10%;
+  flex-wrap: wrap;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
+}
+
+.expense-item__description h2,
+p,
+h3 {
+  color: black;
+  font-size: 12px;
+  margin: 3px 0;
+}
+
+.expense-item__description h2 {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.expense-item__description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.expense-item__price {
+  text-align: center;
+  width: 20vh;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 12px;
+  color: red;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+@media (min-width: 400px) {
+  .expense-item {
+    width: 18rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .expense-item {
+    width: 24rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .expense-item {
+    width: 30rem;
+    justify-content: flex-start;
+  }
+
+  .expense-item h2,
+  p,
+  h3 {
+    text-align: left;
+  }
+}
+
+@media (min-width: 700px) {
+  .expense-item {
+    width: 36rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .expense-item {
+    width: 21.5rem;
+  }
+}
